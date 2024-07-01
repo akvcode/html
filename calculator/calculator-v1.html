@@ -1,0 +1,133 @@
+<html>
+<style>
+#bt{
+animation:cl;
+animation-duration:1s;
+transition:transform 1s;
+}
+#bt:hover{
+//transform:scale(1.2,1.2);
+transform:rotatey(360deg);
+//opacity:40%;
+}
+div{
+background-color:skyblue;
+}
+#bt,#ct{
+width:23%;
+height:200; 
+font-size:60px;
+ color:white; 
+background-color:blue; 
+margin:auto; 
+padding:40px; 
+border-color:brown; 
+border-width:5px;
+border-radius:25px;
+}
+#ot{
+width:23%;
+height:200;
+font-size:60px;
+ color:white; 
+background-color:gray; 
+margin:auto; 
+padding:40px; 
+border-color:brown; 
+border-width:5px;
+border-radius:25px;
+
+transition:left;
+position:relative;
+}
+#dpl{
+border-width:10;
+border-color:blue;
+height:200;
+width:95%;
+font-size:90px;
+background-color:#55ffaa;
+}
+#fnt{
+text-shadow: -15px 15px 10px white;
+ animation:iit infinite;
+animation-duration:5s;
+}
+@keyframes iit{
+0%{color:red; opacity:50%;}
+20%{opacity:0%;}
+//30%{text-shadow: -30px -40px 8px red;} 
+40%{color:magenta; font-family:cursive;}
+60%{color:green;} 
+80%{color:blue;}
+100%{color:orange;}
+}
+#tbl{
+border-radius:30px; 
+border-color:black;
+background-color:magenta;
+animation-name:cal;
+animation:cal infinite;
+animation-duration:5s;
+}
+@keyframes cal{
+0%{background-color:red;}
+20%{background-color:yellow;}
+40%{background-color:black;}
+60%{background-color:orange;}
+80%{background-color:brown;}
+100%{background-color:green;}
+} 
+</style>
+<body >
+<div>
+<br><br><br><br>
+<marquee behavior="alternate" scrollamount="20">
+<font id="fnt" color="yellow" size="30"><h1>Made by Akash<h1>
+</font>
+</marquee>
+
+<center>
+
+<table border="10" id="tbl" width="80%" cellpadding="10" cellspacing="10"height="1200" align="center" >
+<form name="Calculator" >
+<tr>
+<td>
+<center>
+<input id="dpl" text-align="left" type="text" placeholder="enter value"  name="Input" Size="30" width="300" height="90%">
+</center>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+
+<input id="bt" type="button" name="one" value=" 1 " OnClick="Calculator.Input.value += '1'">
+<input id="bt" type="button" name="two" value=" 2 " OnCLick="Calculator.Input.value += '2'">
+<input id="bt" type="button" name="two" value=" 3 " OnCLick="Calculator.Input.value += '3'">
+<input id="ot" type="button" name="add"  value=" + " OnClick="Calculator.Input.value += ' + '">
+<br>
+<input id="bt" type="button" name="four" value=" 4 " OnClick="Calculator.Input.value += '4'">
+<input id="bt" type="button" name="five" value=" 5 " OnCLick="Calculator.Input.value += '5'">
+<input id="bt" type="button" name="six" value=" 6 " OnClick="Calculator.Input.value += '6'">
+<input id="ot" type="button" name="minus" value=" - " OnClick="Calculator.Input.value += ' - '">
+<br>
+<input id="bt" type="button" name="seven" value=" 7 " OnClick="Calculator.Input.value += '7'">
+<input id="bt" type="button" name="eight" value=" 8 " OnCLick="Calculator.Input.value += '8'">
+<input id="bt" type="button" name="nine" value=" 9 " OnClick="Calculator.Input.value += '9'">
+<input id="ot" type="button" name="mul" value=" * " OnClick="Calculator.Input.value += ' * '">
+<br>
+<input id="ct" style="background-color:black; opacity:50%;"type="button" name="clear" value="del" OnClick="Calculator.Input.value = ''">
+<input id="bt" type="button" name="zero" value=" 0 " OnClick="Calculator.Input.value += '0'">
+<input id="ct" style="background-color:red; opacity:90%;"type="button" name="DoIt"  value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">
+<input id="ot" type="button" name="div" value=" / " OnClick="Calculator.Input.value += ' / '">
+<br>
+</td>
+</tr>
+
+</form>
+</table>
+</center>
+</div>
+</body>
+</html>
