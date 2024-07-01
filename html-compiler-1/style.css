@@ -1,0 +1,45 @@
+body{
+    background: url(asset/b.jpg) fixed ;background-size:100% 100%;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+/* START INPUT BOXES */
+.input_boxes{margin: 10px;
+    padding:15px;text-align: -webkit-center;border:solid blueviolet 6px;
+    width:90%;height: 300px;background:none;
+}
+.bar{width: 100%;display:flex;}
+.bar div{width:50%;padding:10px;border:solid blue 3px;margin-inline:5px;background: #0fec0fc9; }
+.bar div:first-child{
+    background: #ffae00b4;
+}
+.area{display: flex;width: 100%;height: 100%;
+    }
+.area textarea{font-size:x-large;
+    margin-bottom: 35px;margin-top: 10px;margin-inline: 5px; border: solid blue 4px;padding: 15px;
+    background:linear-gradient(20deg,black,#000000b0,black);width: 50%;color: white;
+}
+textarea::placeholder{
+    font-family: cursive,sans-serif;font-size:30px;
+}
+/* END INPUT STYLE */
+.run{ margin:10px; width: 90%;
+    height: fit-content;display: flex;}
+    .run div{width: 50%;text-align: -webkit-center;}
+    .run button{
+        padding:10px;width:50%;background: #473d8bbd;border: solid blue 4px;
+    }
+    #c_out{margin-top:40px;
+            position:absolute;width: 100%;text-align: -webkit-center;
+    }
+#output{margin-top:35px;
+    text-align: left;padding: 15px;
+    position: relative;z-index: 2;
+    width: 55%;height: 380px;
+    background: #2f4f4fec;
+}
+    #output_back{z-index: 3;position: absolute;top:0px;left:10%;
+        height:700px;width:80%;background: url('asset/emulator.png') ;background-size:100% 100% ;
+    }
